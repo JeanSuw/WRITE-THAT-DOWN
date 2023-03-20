@@ -7,6 +7,12 @@ const PORT = process.env.PORT || 3001;
 
 const note_db = require('./assets/db/db.json');
 
+function createNote(currentNote, noteList){
+    const newNote = currentNote;
+    
+}
+
+
 // Use middleware to parsing JSON and urlencoded form data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
