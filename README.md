@@ -1,8 +1,7 @@
 # [WRITE-THAT-DOWN](#table-of-content)
 
-It's a note taker. You can write and save notes. <mark>It cannot be deleted.</mark> Be careful of what you write!
-
 ## [Description](#table-of-content)
+It's a note taker. You can write and save notes. <mark>It cannot be deleted.</mark> Be careful of what you write!
 
 ## Table of Content
 * [Description](#description)
