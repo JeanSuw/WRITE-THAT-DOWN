@@ -14,7 +14,6 @@ function createNote(currentNote, noteList){
     fs.writeFile(path.join(__dirname, './db/db.json'), noteData);
 }
 
-
 // Use middleware to parsing JSON and urlencoded form data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -30,7 +29,9 @@ app.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, './public/pages/notes.html'))
 );
 
-
+app.post('/api/notes', (req, res) => {
+    createNote(req.body, note_db);
+});
 
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT}`)
