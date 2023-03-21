@@ -13,8 +13,16 @@ It's a note taker. You can write and save notes. <mark>It cannot be deleted.</ma
 This application is build from starter code, [Note Taker](https://github.com/coding-boot-camp/miniature-eureka). 
 
 The application will be deployed to Heroku.
+[Press here to go see the deployed application](https://write-that-down.herokuapp.com/)
 
 ## [Usage](#table-of-content)
+Use this [link](https://write-that-down.herokuapp.com/) to open the application. Press "Get Started" and it will led you to another page similar to this screenshot below. 
+
+![websitescreenshot](./public/assets/img/Note-taker-screenshot.png)
+
+You may click Note Title or Note Text to write down a note.
+Click (💾) button to save when you have filld both title and text.
+Please be careful of what you write. <mark>It cannot be delete.</mark>
 
 ## [Credits](#table-of-content)
 Packages for this project
