@@ -9,7 +9,9 @@ const note_db = require('./assets/db/db.json');
 
 function createNote(currentNote, noteList){
     const newNote = currentNote;
-    
+    noteList.push(newNote);
+    const noteData = JSON.stringify(noteList);
+    fs.writeFile(path.join(__dirname, './db/db.json'), noteData);
 }
 
 
@@ -20,12 +22,12 @@ app.use(express.static('public'));
 
 // GET Route for homepage
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/index.html'))
+    res.sendFile(path.join(__dirname, './public/index.html'))
 });
 
 // GET Route for notes page
 app.get('/notes', (req, res) =>
-  res.sendFile(path.join(__dirname, '/public/pages/notes.html'))
+  res.sendFile(path.join(__dirname, './public/pages/notes.html'))
 );
 
 
